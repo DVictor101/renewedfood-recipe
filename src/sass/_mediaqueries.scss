@@ -1,0 +1,100 @@
+// MEDIA QUERY MANAGER
+/*
+
+0 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+
+1em = 16px
+
+ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
+
+*/
+
+@media (max-width: 320px) {
+  //LAYOUT QUERY
+
+  .container {
+    border-radius: 1px;
+    grid-template:
+      'head head' 20rem
+      'list recipe' minmax(100rem, auto)
+      / 1fr 2fr;
+  }
+  /*HEADER QUERIES*/
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width: 375px) {
+  //LAYOUT QUERY
+
+  .container {
+    border-radius: 1px;
+    grid-template:
+      'head head' 20rem
+      'list recipe' minmax(100rem, auto)
+      / 1fr 2fr;
+  }
+  /*HEADER QUERIES*/
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-left: 0.5rem;
+  }
+  .add-recipe-window {
+    width: 30rem;
+  }
+}
+@media (max-width: 425px) {
+  //LAYOUT QUERY
+
+  .container {
+    border-radius: 1px;
+    grid-template:
+      'head head' 20rem
+      'list recipe' minmax(100rem, auto)
+      / 1fr 2fr;
+  }
+  /*HEADER QUERIES*/
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-left: 0.5rem;
+  }
+  .add-recipe-window {
+    width: 50rem;
+  }
+}
+@media (max-width: 768px) {
+  //LAYOUT QUERY
+
+  .container {
+    border-radius: 1px;
+    grid-template:
+      'head head' 20rem
+      'list recipe' minmax(100rem, auto)
+      / 1fr 2fr;
+  }
+  /*HEADER QUERIES*/
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-left: 0.5rem;
+  }
+  .add-recipe-window {
+    width: 80rem;
+  }
+}
