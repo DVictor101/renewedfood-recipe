@@ -788,65 +788,34 @@ body {
   justify-self: center;
 }
 
-@media (width <= 320px) {
+@media (width <= 600px) {
+  body {
+    min-width: 100vw;
+  }
+
   .container {
     border-radius: 1px;
-    grid-template: "head head" 20rem
+    grid-template: "head head" 10rem
                    "list recipe" minmax(100rem, auto)
                    / 1fr 2fr;
+    width: 100%;
+    display: block;
   }
 
   .header {
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   .header__logo {
-    margin-left: .5rem;
-  }
-}
-
-@media (width <= 375px) {
-  .container {
-    border-radius: 1px;
-    grid-template: "head head" 20rem
-                   "list recipe" minmax(100rem, auto)
-                   / 1fr 2fr;
-  }
-
-  .header {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .header__logo {
+    margin-bottom: 4px;
     margin-left: .5rem;
   }
 
-  .add-recipe-window {
-    width: 30rem;
-  }
-}
-
-@media (width <= 425px) {
-  .container {
-    border-radius: 1px;
-    grid-template: "head head" 20rem
-                   "list recipe" minmax(100rem, auto)
-                   / 1fr 2fr;
-  }
-
-  .header {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .header__logo {
-    margin-left: .5rem;
-  }
-
-  .add-recipe-window {
-    width: 50rem;
+  .search {
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 0;
   }
 }
 
