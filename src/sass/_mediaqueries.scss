@@ -16,7 +16,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 @media (max-width: 600px) {
   //LAYOUT QUERY
   body {
-    min-width: 100vw;
+    max-width: 100vw;
   }
 
   .container {
@@ -44,8 +44,11 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   //LAYOUT QUERY
+  body {
+    max-width: 100vw;
+  }
 
   .container {
     border-radius: 1px;

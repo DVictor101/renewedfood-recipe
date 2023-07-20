@@ -790,7 +790,7 @@ body {
 
 @media (width <= 600px) {
   body {
-    min-width: 100vw;
+    max-width: 100vw;
   }
 
   .container {
@@ -819,7 +819,11 @@ body {
   }
 }
 
-@media (width <= 768px) {
+@media (width <= 900px) {
+  body {
+    max-width: 100vw;
+  }
+
   .container {
     border-radius: 1px;
     grid-template: "head head" 20rem
