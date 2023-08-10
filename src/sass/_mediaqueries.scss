@@ -74,34 +74,3 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     margin-bottom: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Styles for medium laptops */
-  //LAYOUT QUERY
-  body {
-    max-width: 100vw;
-  }
-
-  .container {
-    width: 100%;
-    border-radius: 1px;
-    display: block;
-    grid-template:
-      'head head' 10rem
-      'list recipe' minmax(100rem, auto)
-      / 1fr 2fr;
-  }
-  /*HEADER QUERIES*/
-  .header {
-    padding: 10px 0;
-    flex-direction: column;
-  }
-  .header__logo {
-    margin-left: 0.5rem;
-    margin-bottom: 4px;
-  }
-  .search {
-    align-items: center;
-    padding-left: 0rem;
-    margin-bottom: 10px;
-  }
-}
