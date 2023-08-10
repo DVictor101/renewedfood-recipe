@@ -708,7 +708,6 @@ const controlPaginationBtn = function(gotoPage) {
     (0, _searchedResultViewDefault.default).render(_model.getSearchResultPage(gotoPage));
     //Render Pagination button
     (0, _paginationViewDefault.default).render(_model.state.search);
-    console.log(_model.state.search);
 };
 const controlRecipeServings = function(newServings) {
     //Update the recipe servings in the state
@@ -7703,7 +7702,6 @@ class Pagination extends (0, _viewDefault.default) {
             const btn = e.target.closest(".btn--inline");
             if (!btn) return;
             const gotoPage = +btn.dataset.goto;
-            console.log(gotoPage);
             handler(gotoPage);
         });
     }

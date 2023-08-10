@@ -61,7 +61,6 @@ const controlPaginationBtn = function (gotoPage) {
 
   //Render Pagination button
   paginationView.render(model.state.search);
-  console.log(model.state.search);
 };
 
 const controlRecipeServings = function (newServings) {
@@ -89,18 +88,18 @@ const controlAddBookMark = function () {
 const controlAddRecipe = async function (newRecipe) {
   try {
     //
-    addRecipeView.displaySpinner()
+    addRecipeView.displaySpinner();
     await model.uploadRecipe(newRecipe);
     console.log(model.state.recipe);
     recipeView.render(model.state.recipe);
-//DISPLAYING SUUCCESSNMESSAGE
+    //DISPLAYING SUUCCESSNMESSAGE
     addRecipeView.successMessageHandler();
 
     //RENDER BOOKMARJ
-    bookMarkView.render(model.state.bookMark)
+    bookMarkView.render(model.state.bookMark);
 
     //CHANGE ID TH E URL
-    window.history.pushState(null, "", `#${model.state.recipe.id}`)
+    window.history.pushState(null, '', `#${model.state.recipe.id}`);
     //close form
     setTimeout(function () {
       addRecipeView.toggleWindow(), CLOSEMODALSECONDS * 1000;

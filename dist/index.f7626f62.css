@@ -788,7 +788,67 @@ body {
   justify-self: center;
 }
 
-@media (width <= 600px) {
+@media (width <= 576px) {
+  .add-recipe-window {
+    width: 90vw;
+    margin: 0 30px;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+  }
+
+  .upload {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+  }
+}
+
+@media (width >= 577px) and (width <= 767px) {
+  .add-recipe-window {
+    width: 90vw;
+    margin: 0 30px;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+  }
+
+  .upload {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+  }
+}
+
+@media (width >= 768px) and (width <= 991px) {
+  .add-recipe-window {
+    width: 90vw;
+    margin: 0 30px;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+  }
+
+  .upload {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+  }
+}
+
+@media (width <= 576px) {
   body {
     max-width: 100vw;
   }
@@ -819,29 +879,65 @@ body {
   }
 }
 
-@media (width <= 900px) {
+@media (width >= 577px) and (width <= 767px) {
   body {
     max-width: 100vw;
   }
 
   .container {
     border-radius: 1px;
-    grid-template: "head head" 20rem
+    grid-template: "head head" 10rem
                    "list recipe" minmax(100rem, auto)
                    / 1fr 2fr;
+    width: 100%;
+    display: block;
   }
 
   .header {
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   .header__logo {
+    margin-bottom: 4px;
     margin-left: .5rem;
   }
 
-  .add-recipe-window {
-    width: 80rem;
+  .search {
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+}
+
+@media (width >= 768px) and (width <= 991px) {
+  body {
+    max-width: 100vw;
+  }
+
+  .container {
+    border-radius: 1px;
+    grid-template: "head head" 10rem
+                   "list recipe" minmax(100rem, auto)
+                   / 1fr 2fr;
+    width: 100%;
+    display: block;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .header__logo {
+    margin-bottom: 4px;
+    margin-left: .5rem;
+  }
+
+  .search {
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 0;
   }
 }
 

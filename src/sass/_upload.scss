@@ -97,3 +97,68 @@
     justify-self: center;
   }
 }
+@media (max-width: 576px) {
+  //LAYOUT QUERY
+  .add-recipe-window {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    margin: 0 30px;
+  }
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  /* Styles for tablets and small laptops */
+  //LAYOUT QUERY
+  .add-recipe-window {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    margin: 0 30px;
+  }
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium laptops */
+  .add-recipe-window {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    margin: 0 30px;
+  }
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
